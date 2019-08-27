@@ -13,3 +13,14 @@
     await context.github.issues.createComment(param)
   }
  }
+ hookCollection.wrap('get', async (getData, options) => {
+  await beforeHook(options)
+ 
+  try {
+    const result = getData(options)
+  } catch (error) {
+    await errorHook(error, options)
+  }
+ 
+  await afterHook(result, options)
+})
