@@ -2,9 +2,9 @@
  * This is the main entrypoint to your Probot app
  * @param {import('probot').Application} app
  */
- module.exports = app => {
+ module.exports = robot => {
   // Your code here
-  app.log('Yay, the app was loaded!')
+  robot.log('Yay, the app was loaded!')
 
   robot.on('pull_request.opened',test)
    async function test (context)  {
