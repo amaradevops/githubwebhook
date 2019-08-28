@@ -1,3 +1,43 @@
-workinng on
+to upgrade to the latest version of npm
 
-not working 
+npm install npm@latest -g
+to install globly
+
+npm install -g npx
+
+Run the following command:
+npm init
+
+To create a default package.json using information extracted from the current directory
+npm init --yes
+
+example :package.json
+ > npm init --yes
+  Wrote to /home/ag_dubs/my_package/package.json:
+
+  {
+    "name": "my_package",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ashleygwilliams/my_package.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/ashleygwilliams/my_package/issues"
+    },
+    "homepage": "https://github.com/ashleygwilliams/my_package"
+  }
+
+Setting config options for the init command
+
+> npm set init.author.email "example-user@example.com"
+> npm set init.author.name "example_user"
+> npm set init.license "MIT"
