@@ -41,3 +41,58 @@ Setting config options for the init command
 > npm set init.author.email "example-user@example.com"
 > npm set init.author.name "example_user"
 > npm set init.license "MIT"
+
+Creating an unscoped public package
+
+On the command line, create a directory for your package:
+ mkdir my-test-package
+Navigate to the root directory of your package:
+ cd my-test-package
+If you are using git to manage your package code, in the package root directory, run the following commands, replacing git-remote-url with the git remote URL for your package:
+ git init
+ git remote add origin git://git-remote-url
+In the package root directory, run the npm init command.
+Respond to the prompts to generate a package.json file. For help naming your package, see “Package name guidelines”.
+Create a README file that explains what your package code is and how to use it.
+In your preferred text editor, write the code for your package.
+
+Reviewing package contents for sensitive or unnecessary information
+We strongly recommend removing sensitive information, such as private keys, passwords, personally identifiable information (PII), and credit card data before publishing your package to the registry.
+
+.gitignore file to prevent publishing to the registry
+
+Adding dependencies to a package.json file
+
+Adding dependencies to a package.json file from the command line§
+To add dependencies and devDependencies to a package.json file from the command line, you can install them in the root directory of your package using the --save-prod flag for dependencies (the default behavior of npm install) or the --save-dev flag for devDependencies.
+
+To add an entry to the "dependencies" attribute of a package.json file, on the command line, run the following command:
+
+npm install <package-name> [--save-prod]
+To add an entry to the "devDependencies" attribute of a package.json file, on the command line, run the following command:
+
+npm install <package-name> --save-dev
+
+Manually editing the package.json file§
+To add dependencies to a package.json file, in a text editor, add an attribute called "dependencies" that references the name and semantic version of each dependency:
+
+{
+  "name": "my_package",
+  "version": "1.0.0",
+  "dependencies": {
+    "my_dep": "^1.0.0",
+    "another_dep": "~2.2.0"
+  }
+}
+To add devDependencies to a package.json file, in a text editor, add an attribute called "devDependencies" that references the name and semantic version of each devDependency:
+
+"name": "my_package",
+"version": "1.0.0",
+"dependencies": {
+  "my_dep": "^1.0.0",
+  "another_dep": "~2.2.0"
+},
+"devDependencies" : {
+  "my_test_framework": "^3.1.0".
+  "another_dev_dep": "1.0.0 - 1.2.0"
+}
