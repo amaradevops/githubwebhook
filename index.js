@@ -14,13 +14,4 @@
   }
  }
  
- const commands = require('probot-commands')
-
-module.exports = robot => {
-  robot.log('Yay, the app was loaded!')
-
-  commands(robot, 'echo', (context, command) => {
-    const issueComment = context.issue({ body: command.arguments })
-    return context.github.issues.createComment(issueComment)
-  });
-}
+ 
