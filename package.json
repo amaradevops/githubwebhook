@@ -1,6 +1,6 @@
 {
   "name": "githubwebhook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Probot App",
   "author": "amaradevops <amaradevops1234@gmail.com> (https://github.com/amaradevops/githubwebhook)",
   "license": "ISC",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "before-after-hook": "^2.1.0",
+    "dotenv": "^8.1.0",
     "probot": "^7.2.0"
   },
   "devDependencies": {
