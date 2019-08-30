@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 to upgrade to the latest version of npm
 
 npm install npm@latest -g
@@ -96,3 +97,10 @@ To add devDependencies to a package.json file, in a text editor, add an attribut
   "my_test_framework": "^3.1.0".
   "another_dev_dep": "1.0.0 - 1.2.0"
 }
+=======
+workinng on
+testrrr
+not working 
+
+jjjjjjjjj
+>>>>>>> 2d79ea464f7911a96ffb03ddc983951ca6e56f77
