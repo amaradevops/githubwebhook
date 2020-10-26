@@ -3,7 +3,7 @@ to upgrade to the latest version of npm
 iiiiiiiiiiiiiiiiiii
 npm install npm@latest -g
 to install globly
-
+dffggg
 npm install -g npx
 
 Run the following command:
