@@ -8,7 +8,7 @@ npm install -g npx
 
 Run the following command:
 npm init
-
+install
 To create a default package.json using information extracted from the current directory
 npm init --yes
 
